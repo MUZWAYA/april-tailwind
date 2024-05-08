@@ -1,0 +1,37 @@
+
+main{
+    display: grid;
+    gap: 30PX 10PX;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 150px);
+    grid-template-areas: 
+    "d d d"
+    "d d d"
+    "c c b"
+    "e f b"
+    "a a a";
+}
+
+section:nth-last-of-type(1){
+    grid-area: a;
+}
+section:nth-last-of-type(2){
+    grid-area: b;
+}
+section:nth-last-of-type(3){
+    grid-area: c;
+}
+section:nth-last-of-type(4){
+    grid-area: d;
+}
+section:nth-last-of-type(5){
+    grid-area: e;
+}
+section:nth-last-of-type(6){
+    grid-area: f;
+}
+
+
+section{
+    background-color: blue;
+}
